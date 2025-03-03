@@ -1,3 +1,11 @@
+# Docker specific files
+.devcontainer/
+compose.yaml
+Dockerfile
+
+
+# From .gitignore
+
 .idea/
 .vscode/
 
@@ -14,4 +22,4 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv/
+.venv

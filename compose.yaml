@@ -1,0 +1,16 @@
+services:
+  core_eval:
+    image: core_eval
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: core_eval
+    hostname: core_eval
+    restart: unless-stopped
+    environment:
+      - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./xmls:/root/.coregui/xmls:rw # allows access to XML files created from the GUI
+      - ./results:/root/results:rw # allows access to results
+    privileged: true

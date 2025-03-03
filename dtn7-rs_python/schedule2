@@ -1,0 +1,26 @@
+# Node runs for 1 minutes (60 seconds)
+60 LIFETIME
+
+# Enable DTN Client at 5 seconds
+5 CONNECT
+
+# Send message at 10 seconds
+10 MESSAGE
+
+# Disable DTN Client at 15 seconds
+15 DISCONNECT
+
+# Send message at 20 seconds
+#20 MESSAGE
+
+# Enable DTN Client at 25 seconds
+25 CONNECT
+
+# Send message at 30 seconds
+30 MESSAGE
+
+# Send message at 40 seconds
+40 MESSAGE
+
+# Send message at 50 seconds
+50 MESSAGE

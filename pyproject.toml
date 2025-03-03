@@ -1,0 +1,19 @@
+[project]
+name = "dtn-testbed"
+version = "0.1.0"
+description = "Playground for DTN7 and CORE"
+readme = "README.md"
+requires-python = "==3.10.12"
+dependencies = [
+    "cbor2>=5.7.0",
+    "websocket-client>=1.8.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.11",
+]
+
+
+[tool.ruff.lint]
+select = ["I"] # Import-related checks

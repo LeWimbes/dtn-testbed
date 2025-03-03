@@ -1,0 +1,30 @@
+{
+  "name": "DTN testbed Dev Container",
+  "build": {
+    "context": "..",
+    "dockerfile": "./Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "sed -i 's/^ZSH_THEME=.*/ZSH_THEME=\"agnoster\"/' ~/.zshrc",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true,
+      "username": "vscode"
+    },
+    "ghcr.io/devcontainers/features/rust:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "rust-lang.rust-analyzer",
+        "fill-labs.dependi",
+        "tamasfe.even-better-toml"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/core/venv/bin/python"
+      }
+    }
+  }
+}
